@@ -1,30 +1,20 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
-
 // Font path is used to include ionicons,
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
-
-
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
-
-
 @import "ionic.globals";
-
-
 // Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
-
+$myUrl: '../assets/imgs/docker.png';
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
@@ -32,57 +22,64 @@ $app-direction: ltr;
 // to match your app's branding. Ionic uses a Sass map of
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
-
-$colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
-);
-
-
-// App iOS Variables
-// --------------------------------------------------
-// iOS only Sass variables can go here
-
-
-
-
-// App Material Design Variables
-// --------------------------------------------------
-// Material Design only Sass variables can go here
-
-
-
-
-// App Windows Variables
-// --------------------------------------------------
-// Windows only Sass variables can go here
-
-
-
-
-// App Theme
-// --------------------------------------------------
-// Ionic apps can have different themes applied, which can
-// then be future customized. This import comes last
-// so that the above variables are used and Ionic's
-// default are overridden.
-
+$colors: ( primary:#5C55BF, secondary:#1f283e, danger: #f53d3d, light:#f4f4f4, dark:#222, ash: #353131, darkblue: #1a2035, main-color: #E91E63, second-color:#C2185B, indicator:#488aff, doom: #BBBBBB, nav-border-bottom: rgba(190, 188, 188, 0.93), nav-color: rgb(253, 253, 253), bar-color: #FFFFFF, deep: #535252, gery: rgba(25, 196, 84, 0.91), toper: rgba(164, 190, 233, 0.28), doper: rgba(19, 38, 72, 0.46), lighters: rgba(91, 144, 233, 0.28));
+$toolbar-background: color($colors, secondary);
+$tabs-md-tab-color-active: color($colors, light);
+$tabs-background: color($colors, darkblue);
+$tabs-md-tab-color: color($colors, light);
+$tabs-md-tab-text-color: color($colors, light);
+$tabs-ios-background: color($colors, darkblue);
+$tabs-ios-tab-color: color($colors, light);
+$tabs-ios-tab-text-color: color($colors, light);
+$tabs-ios-tab-color-active: color($colors, light);
+$tabs-md-tab-icon-transform-origin-x: 50%;
+$tabs-md-tab-icon-transform-origin-y: 150%;
+$tabs-md-tab-icon-transition: transform .5s ease-in-out;
+$tabs-md-tab-text-transform-origin-x: 50%;
+$tabs-md-tab-text-transform-origin-y: 80%;
+$tabs-md-tab-text-transition: transform .5s ease-in-out;
+$card-ios-background-color: color($colors, secondary);
+$card-md-background-color: color($colors, secondary);
+$card-md-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .14),
+0 3px 1px -2px rgba(0, 0, 0, .2),
+0 1px 5px 0 rgba(0, 0, 0, .12);
+$card-ios-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .14),
+0 3px 1px -2px rgba(0, 0, 0, .2),
+0 1px 5px 0 rgba(0, 0, 0, .12);
+$card-ios-margin-top: 50px;
+$card-md-margin-top: 50px;
+$button-ios-background-color: color($colors, primary);
+$button-md-background-color: color($colors, primary);
+$button-ios-margin-top: 15px;
+$button-md-margin-top: 15px;
+$button-md-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+0 3px 1px -2px rgba(0, 0, 0, .2),
+0 1px 5px 0 rgba(0, 0, 0, .12);
+$button-md-text-transform: uppercase;
+$button-md-transition-duration: 300ms;
+$button-md-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+$button-md-outline-background-color-hover: rgba(158, 158, 158, .1);
+$button-ios-background-color: color($colors, darkblue);
+$button-ios-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+0 3px 1px -2px rgba(0, 0, 0, .2),
+0 1px 5px 0 rgba(0, 0, 0, .12);
+$button-ios-text-transform: uppercase;
+$button-ios-transition-duration: 300ms;
+$button-ios-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+$button-ios-outline-background-color-hover: rgba(158, 158, 158, .1);
+$text-input-md-input-clear-icon-color: #5b5b5b;
+$text-input-md-input-clear-icon-svg: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='"+$text-input-md-input-clear-icon-color+"' d='M403.1,108.9c-81.2-81.2-212.9-81.2-294.2,0s-81.2,212.9,0,294.2c81.2,81.2,212.9,81.2,294.2,0S484.3,190.1,403.1,108.9z M352,340.2L340.2,352l-84.4-84.2l-84,83.8L160,339.8l84-83.8l-84-83.8l11.8-11.8l84,83.8l84.4-84.2l11.8,11.8L267.6,256L352,340.2z'/></svg>";
+$segment-button-md-text-color-activated:#f4f4f4;
+$segment-button-md-border-color-activated:#9C27B0;
+$checkbox-md-icon-size:18px;
+$alert-md-title-font-size:14px;
 @import "ionic.theme.default";
-
-
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
-
 @import "ionic.ionicons";
-
-
 // Fonts
 // --------------------------------------------------
-
 @import "roboto";
 @import "noto-sans";

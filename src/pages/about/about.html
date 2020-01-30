@@ -1,11 +1,71 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
+
+    <ion-navbar color="secondary">
+        <ion-title>About Emergency Finder</ion-title>
+    </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
+<ion-content class="home">
+
+    <div>
+
+        <ion-card>
+            <ion-card-header>
+                <img class="about-image" src="assets/imgs/docker.png" />
+            </ion-card-header>
+            <ion-card-content>
+                <h5>
+                    Emergency Finder is an Ionic 3 Mobile App which provides nearby services to a user current location using Google maps.
+                </h5>
+            </ion-card-content>
+
+            <h6 class="title" text-center>Hit Me Up on: </h6>
+
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4>
+                        <button ion-button icon-only block class="btn-facebook">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </button>
+                    </ion-col>
+                    <ion-col col-4>
+                        <button ion-button icon-only block class="btn-twitter">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </button>
+                    </ion-col>
+                    <ion-col col-4>
+                        <button ion-button icon-only block class="btn-gplus">
+                      <ion-icon name="logo-googleplus"></ion-icon>
+                    </button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <!-- <ion-row>
+
+                <ion-col col-3>
+                    <button ion-button icon-left small class="about" (click)="showAuthorSocialMediaPage('https://www.facebook.com/ANJORINDAMILARE')">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <div>Facebook</div>
+          </button>
+                </ion-col>
+
+                <ion-col col-3>
+                    <button ion-button icon-left small class="about" (click)="showAuthorSocialMediaPage('https://twitter.com/laravel00')">
+            <ion-icon name="logo-twitter"></ion-icon>
+            <div>Twitter</div>
+          </button>
+                </ion-col>
+
+                <ion-col col-3>
+                    <button ion-button icon-left small class="about" (click)="showAuthorSocialMediaPage('https://github.com/dammy001')">
+            <ion-icon name="logo-github"></ion-icon>
+            <div>Github</div>
+          </button>
+                </ion-col>
+            </ion-row> -->
+        </ion-card>
+
+    </div>
 
 </ion-content>

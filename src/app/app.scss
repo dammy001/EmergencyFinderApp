@@ -1,16 +1,255 @@
-// http://ionicframework.com/docs/theming/
-
-
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+    // http://ionicframework.com/docs/theming/
+    .home {
+        background: color($colors, darkblue);
+        color: color($colors, light);
+    }
+    
+    .modal-wrapper {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .bold {
+        font-weight: bold !important;
+    }
+    
+    .btn-facebook {
+        background-color: #3B5999;
+    }
+    
+    .btn-twitter {
+        background-color: #00ACEE;
+    }
+    
+    .btn-gplus {
+        background-color: #E04006
+    }
+    
+    ion-app .nav-decor {
+        background-color: transparent !important;
+    }
+    
+    .user-profile {
+        .user-avatar {
+            width: 68px;
+            height: 68px;
+            display: inline-block;
+        }
+        .toolbar-background {
+            background: color($colors, darkblue);
+        }
+        .other-data {
+            .column {
+                &:first-child {
+                    border-right: 1px solid white;
+                    margin: 5px;
+                    color: color($colors, light);
+                }
+            }
+        }
+    }
+    
+    .menu-header {
+        color: #fff;
+        background-color: color($colors, secondary);
+    }
+    
+    .sidemenu-image {
+        height: 150px;
+        width: auto;
+        margin: auto;
+        display: block;
+    }
+    
+    //set map display height and width
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .place-logo {
+        max-width: 110px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+    .title-window {
+        color: map-get($colors, main-color);
+        font-size: 16px;
+    }
+    
+    .segment-title {
+        color: map-get($colors, light);
+        font-size: 16px;
+    }
+    
+    .segment-item {
+        background: #fff;
+        margin-bottom: 20px;
+    }
+    
+    .segment {
+        color: white
+    }
+    
+    ion-segment {
+        margin-top: 7px;
+        color: color($colors, light);
+        background-color: map-get($colors, secondary);
+    }
+    
+    ion-segment-button {
+        color: #fff;
+    }
+    
+    .alert-info {
+        font-size: 16px;
+        padding: 13px;
+        background-color: color($colors, secondary);
+        color: white;
+        margin-bottom: 15px;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+    
+    .alert-default {
+        background-color: color($colors, primary);
+        font-size: 16px;
+        padding: 13px;
+        color: white;
+        margin-bottom: 15px;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+    
+    .btns {
+        //   background:
+        padding: 3px;
+        margin-bottom: -18px;
+    }
+    
+    .item-selected {
+        margin-bottom: -15px;
+    }
+    
+    ul {
+        padding: 0px;
+        margin: -1px;
+        &.rating li {
+            //   padding: 5px 10px !important;
+            background: none;
+            color: #FFD600;
+            ion-icon {
+                font-size: 15px;
+            }
+        }
+    }
+    
+    .fab-icon {
+        margin-bottom: 65px;
+        margin-left: 190px;
+    }
+    
+    // style for auth pages
+    .auth-page {
+        background: color($colors, darkblue);
+        color: color($colors, primary);
+        &::after {
+            content: "";
+            background: color($colors, darkblue);
+            color: color($colors, primary);
+            // background: url("../assets/imgs/docker.png") no-repeat;
+            // background-size: cover;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: 0;
+        }
+        .scroll-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            //background: rgba(50, 10, 92, .4);
+            .login-content {
+                width: 86%;
+                .logo {
+                    width: 100px;
+                    height: 100px;
+                    margin: 20px auto 0;
+                    margin-top: 30px;
+                    border-radius: 10%;
+                    background: url("../assets/imgs/docker.png") no-repeat;
+                    background-size: 100%;
+                }
+                .list-form {
+                    padding: 0;
+                    margin-bottom: 0;
+                    ion-item {
+                        background: none;
+                        padding: 0;
+                        &:first-child {
+                            border-top: none;
+                            //margin-bottom: -100px;
+                        }
+                        &:after {
+                            display: none;
+                        }
+                        ion-label {
+                            font-size: 1em;
+                            color: color($colors, light);
+                        }
+                        input {
+                            color: color($colors, light);
+                        }
+                    }
+                }
+            }
+        }
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+        .animated.infinite {
+            animation-iteration-count: infinite;
+        }
+        .animated.hinge {
+            animation-duration: 2s;
+        }
+        .animated.flipOutX,
+        .animated.flipOutY,
+        .animated.bounceIn,
+        .animated.bounceOut {
+            animation-duration: .75s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .fadeIn {
+            animation-name: fadeIn;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translate3d(0, -100%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+        .fadeInDown {
+            animation-name: fadeInDown;
+        }
+    }

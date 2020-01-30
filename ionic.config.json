@@ -1,5 +1,7 @@
 {
   "name": "emergencyfinder",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

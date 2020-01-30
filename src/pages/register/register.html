@@ -1,0 +1,64 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Register</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<!-- -->
+<ion-content padding class="animated fadeIn login auth-page">
+    <div class="login-content">
+
+        <!-- Logo -->
+        <div padding-horizontal text-center class="animated fadeInDown">
+            <div class="logo"></div>
+        </div>
+
+        <!-- Login form -->
+        <form class="list-form" [formGroup]="account">
+            <ion-item>
+                <ion-label floating>
+                    <ion-icon name="person" item-start class="text-primary"></ion-icon>
+                    Name
+                </ion-label>
+                <ion-input type="text" formControlName="name" [class.invalid]="!account.controls.name.valid && account.controls.name.dirty" #name></ion-input>
+            </ion-item>
+            <p class="errorMessage" *ngIf="!account.controls.name.hasError('required') && account.controls.name.hasError('name') && account.controls.name.dirty">
+                Please Enter Valid Name
+            </p>
+
+            <ion-item>
+                <ion-label floating>
+                    <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+                    Email
+                </ion-label>
+                <ion-input type="email" formControlName="email" [class.invalid]="!account.controls.email.valid && account.controls.email.dirty" #email></ion-input>
+            </ion-item>
+            <p class="errorMessage" *ngIf="!account.controls.email.hasError('required') && account.controls.email.hasError('email') && account.controls.email.dirty">
+                Please Enter Valid Email Address
+            </p>
+
+            <ion-item>
+                <ion-label floating>
+                    <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+                    Password
+                </ion-label>
+                <ion-input type="password" formControlName="password" [class.invalid]="!account.controls.password.valid && account.controls.password.dirty" #password></ion-input>
+            </ion-item>
+            <p *ngIf="!account.controls.password.valid && account.controls.password.dirty" class="errorMessage">Please enter a valid password.</p>
+
+            <div>
+                <button ion-button icon-start outline round color="light" type="submit" [disabled]="!account.valid" tappable (click)="register()" style="margin-left: 50px;">
+          <ion-icon name="log-in"></ion-icon>
+            SIGN UP
+          </button>
+            </div>
+        </form>
+
+
+        <!-- Other links -->
+        <div text-center margin-top>
+            <span ion-text color="primary" tappable (click)="login()">I have an account</span>
+        </div>
+
+    </div>
+</ion-content>
