@@ -37,7 +37,7 @@
     "@ionic-native/splash-screen": "4.20.0",
     "@ionic-native/status-bar": "4.20.0",
     "@ionic-native/transfer": "3.14.0",
-    "@ionic/storage": "2.2.0",
+    "@ionic/storage": "2.3.1",
     "@types/google-maps": "3.2.3",
     "android-versions": "1.4.0",
     "angularfire2": "5.4.2",
