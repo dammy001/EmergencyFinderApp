@@ -39,7 +39,7 @@
     "@ionic-native/transfer": "3.14.0",
     "@ionic/storage": "2.3.1",
     "@types/google-maps": "3.2.3",
-    "android-versions": "1.4.0",
+    "android-versions": "1.7.0",
     "angularfire2": "5.4.2",
     "cordova-android": "6.4.0",
     "cordova-browser": "4.1.0",
