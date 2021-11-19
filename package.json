@@ -44,7 +44,7 @@
     "cordova-android": "6.4.0",
     "cordova-browser": "4.1.0",
     "cordova-common": "3.2.1",
-    "cordova-plugin-accountkit": "1.1.4",
+    "cordova-plugin-accountkit": "1.4.0",
     "cordova-plugin-android-fingerprint-auth": "1.5.0",
     "cordova-plugin-android-permissions": "1.0.2",
     "cordova-plugin-browsertab": "0.2.0",
