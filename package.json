@@ -41,7 +41,7 @@
     "@types/google-maps": "3.2.3",
     "android-versions": "1.4.0",
     "angularfire2": "5.4.2",
-    "cordova-android": "6.4.0",
+    "cordova-android": "10.1.1",
     "cordova-browser": "4.1.0",
     "cordova-common": "4.0.2",
     "cordova-plugin-accountkit": "1.4.0",
