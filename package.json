@@ -58,7 +58,7 @@
     "cordova-plugin-googlemaps": "2.7.1",
     "cordova-plugin-inappbrowser": "5.0.0",
     "cordova-plugin-ionic-keyboard": "2.2.0",
-    "cordova-plugin-ionic-webview": "4.2.1",
+    "cordova-plugin-ionic-webview": "5.0.0",
     "cordova-plugin-network-information": "3.0.0",
     "cordova-plugin-request-location-accuracy": "2.3.0",
     "cordova-plugin-splashscreen": "6.0.0",
