@@ -54,7 +54,7 @@
     "cordova-plugin-file-transfer": "1.7.1",
     "cordova-plugin-filepath": "1.6.0",
     "cordova-plugin-fingerprint-aio": "2.0.0",
-    "cordova-plugin-geolocation": "2.4.3",
+    "cordova-plugin-geolocation": "4.1.0",
     "cordova-plugin-googlemaps": "2.7.1",
     "cordova-plugin-inappbrowser": "5.0.0",
     "cordova-plugin-ionic-keyboard": "2.2.0",
