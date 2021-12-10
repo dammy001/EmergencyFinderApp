@@ -67,7 +67,7 @@
     "cordova-plugin-whitelist": "1.3.5",
     "cordova-plugin-x-socialsharing": "6.0.3",
     "cordova.plugins.diagnostic": "6.1.0",
-    "firebase": "9.5.0",
+    "firebase": "9.6.1",
     "ionic-angular": "3.9.10",
     "ionic2-rating": "1.2.2",
     "ionic2-super-tabs": "5.2.0",
