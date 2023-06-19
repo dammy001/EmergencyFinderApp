@@ -73,7 +73,7 @@
     "ionic2-super-tabs": "5.2.0",
     "ionicons": "6.0.0",    
     "me.tonny.cordova.plugins.multidex": "https://github.com/jwall149/cordova-multidex",
-    "rxjs": "7.5.1",
+    "rxjs": "7.8.1",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.11.4"
   },
