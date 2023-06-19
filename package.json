@@ -71,7 +71,7 @@
     "ionic-angular": "3.9.10",
     "ionic2-rating": "1.2.2",
     "ionic2-super-tabs": "5.2.0",
-    "ionicons": "6.0.0",    
+    "ionicons": "6.1.3",    
     "me.tonny.cordova.plugins.multidex": "https://github.com/jwall149/cordova-multidex",
     "rxjs": "7.5.1",
     "sw-toolbox": "3.6.0",
